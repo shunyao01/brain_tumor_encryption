@@ -1,4 +1,5 @@
-# Library Required
+# Library dependencies
+python==3.9.13
 numpy==1.23.5
 torch==2.0.0
 torchvision==0.15.1

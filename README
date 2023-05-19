@@ -1,0 +1,26 @@
+# Library Required
+numpy==1.23.5
+torch==2.0.0
+torchvision==0.15.1
+PIL==9.5.0
+torchattacks==3.4.0
+opencv-python==4.7.0.72
+tqdm==4.65.0
+keras==2.10.0
+scikit-learn==1.2.2
+
+
+# Command to run SINIFGSM attack:
+python attack_model.py {attack_name} {load_path} {save_path}
+python attack_model.py SINIFGSM .\Dataset\brain_tumor_dataset\Testing\ .\test_attack\
+attack names available: SINIFGSM, VNIFGSM, PGD, APGD, Jitter
+
+
+# Command to run mobileNetV3 classifier:
+python classifier_mobilenetV3.py {load_path}
+python classifier_mobilenetV3.py .\Dataset\brain_tumor_dataset\Testing\
+
+
+# Command to run EfficientNetB3 classifier:
+python classifier_efficientnetB3.py {load_path}
+python classifier_efficientnetB3.py .\Dataset\brain_tumor_dataset\Testing\
